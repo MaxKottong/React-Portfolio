@@ -21,13 +21,7 @@ function App() {
 
     return (
         <div>
-            <Nav
-                pages={pages}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
-            ></Nav>
+            <Header></Header>
             <main>
                 {!contactSelected ? (
                     <>

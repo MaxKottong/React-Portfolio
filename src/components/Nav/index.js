@@ -16,11 +16,6 @@ function Nav(props) {
 
     return (
         <header className="flex-row px-1">
-            <h2>
-                <a data-testid="link" href="/">
-                    Lernantino
-                </a>
-            </h2>
             <nav>
                 <ul className="flex-row">
                     {pages.map((page) => (
