@@ -31,7 +31,7 @@ function App() {
             <main>
                 {!contactSelected ? (
                     <>
-                        <Portfolio></Portfolio>
+                        <About></About>
                     </>
                 ) : (
                     <Contact></Contact>
