@@ -3,16 +3,16 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
     const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
+        pages = [],
+        setCurrentPage,
+        currentPage,
         contactSelected,
         setContactSelected
     } = props;
 
     useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+        document.title = capitalizeFirstLetter(currentPage.name);
+    }, [currentPage]);
 
     return (
         <header className="flex-row px-1">
@@ -23,18 +23,17 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    {categories.map((category) => (
+                    {pages.map((page) => (
                         <li
-                            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && `navActive`
-                                }`}
-                            key={category.name}
+                            className={`mx-1 ${currentPage.name === page.name && !contactSelected && `navActive`}`}
+                            key={page.name}
                         >
                             <span onClick={() => {
-                                setCurrentCategory(category);
+                                setCurrentPage(page);
                                 setContactSelected(false);
                             }}
                             >
-                                {capitalizeFirstLetter(category.name)}
+                                {capitalizeFirstLetter(page.name)}
                             </span>
                         </li>
                     ))}

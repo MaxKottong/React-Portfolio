@@ -3,11 +3,10 @@ import Project from '../Project';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Portfolio(props) {
-    const { currentCategory } = props;
+    const { currentPage } = props;
 
     return (
         <section>
-            <Project />
         </section>
     );
 }
