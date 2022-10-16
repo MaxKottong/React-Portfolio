@@ -20,9 +20,21 @@ function App() {
 
     return (
         <div>
-            <Header></Header>
+            <Header
+                pages={pages}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+                contactSelected={contactSelected}
+                setContactSelected={setContactSelected}
+            ></Header>
             <main>
-                <About></About>
+                {!contactSelected ? (
+                    <>
+                        <About currentPage={currentPage}></About>
+                    </>
+                ) : (
+                    <Contact></Contact>
+                )}
             </main>
         </div>
     );
