@@ -1,9 +1,7 @@
 import React from 'react';
-import Project from '../Project';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Portfolio(props) {
-    const { currentPage } = props;
+function Portfolio({ portfolio }) {
+    const { title, deployLink, gitHubLink, projectImg } = portfolio;
 
     return (
         <section>

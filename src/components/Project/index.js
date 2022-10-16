@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import Portfolio from '../Portfolio';
 
-const Project = ({ category }) => {
-    const [projects] = useState([
+const Project = () => {
+    const projects = [
         {
             title: 'Stream Connect',
             deployLink: 'https://gatorhatur.github.io/stream-connect/',
@@ -26,22 +27,11 @@ const Project = ({ category }) => {
             gitHubLink: 'https://github.com/MaxKottong/run-buddy',
             projectImg: ''
         }
-    ]);
-
-    const [currentProject, setCurrentProject] = useState();
+    ];
 
     return (
         <div>
-            <div className="flex-row">
-                {projects.map((image, i) => (
-                    <img
-                        src={require(`../../assets/small/projects/${i}.jpg`)}
-                        alt={image.name}
-                        className="img-thumbnail mx-1"
-                        key={image.name}
-                    />
-                ))}
-            </div>
+            
         </div>
     );
 };
