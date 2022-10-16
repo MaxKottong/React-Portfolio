@@ -3,8 +3,9 @@ import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import About from './components/About';
 
 function App() {
     const [categories] = useState([
@@ -28,6 +29,7 @@ function App() {
                 setContactSelected={setContactSelected}
             ></Nav>
             <main>
+                <Portfolio></Portfolio>
             </main>
         </div>
     );
