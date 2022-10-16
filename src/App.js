@@ -7,6 +7,17 @@ import Contact from './components/Contact';
 import About from './components/About';
 
 function App() {
+    const [pages] = useState([
+        { name: 'about' },
+        { name: 'portfolio' },
+        { name: 'contact' },
+        { name: 'resume' }
+    ]);
+
+    const [currentPage, setCurrentPage] = useState(pages[0]);
+
+    const [contactSelected, setContactSelected] = useState(false);
+
     return (
         <div>
             <Header></Header>
@@ -15,6 +26,6 @@ function App() {
             </main>
         </div>
     );
-}
+};
 
 export default App;

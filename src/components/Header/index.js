@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
 
-const Header = () => {
-    const [pages] = useState([
-        { name: 'about' },
-        { name: 'portfolio' },
-        { name: 'contact' },
-        { name: 'resume' }
-    ]);
-
-    const [currentPage, setCurrentPage] = useState(pages[0]);
-
-    const [contactSelected, setContactSelected] = useState(false);
+const Header = (props) => {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+        contactSelected,
+        setContactSelected
+    } = props;
 
     return (
         <div>
