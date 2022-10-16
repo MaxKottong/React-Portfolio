@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Nav from './components/Nav';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [categories] = useState([
+        { name: 'about' },
+        { name: 'portfolio' },
+        { name: 'contact' },
+        { name: 'resume' }
+    ]);
+
+    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+    const [contactSelected, setContactSelected] = useState(false);
+
+    return (
+        <div>
+            <Nav
+                categories={categories}
+                setCurrentCategory={setCurrentCategory}
+                currentCategory={currentCategory}
+                contactSelected={contactSelected}
+                setContactSelected={setContactSelected}
+            ></Nav>
+            <main>
+                {!contactSelected ? (
+                    <>
+                        <Gallery currentCategory={currentCategory}></Gallery>
+                        <About></About>
+                    </>
+                ) : (
+                    <ContactForm></ContactForm>
+                )}
+            </main>
+        </div>
+    );
 }
 
 export default App;
