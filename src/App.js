@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import About from './components/About';
+import Resume from './components/Resume';
 
 function App() {
     const [pages] = useState([
@@ -17,6 +18,23 @@ function App() {
     const [currentPage, setCurrentPage] = useState(pages[0]);
 
     const [contactSelected, setContactSelected] = useState(false);
+
+    function Page({ currentPage }) {
+        const renderPage = () => {
+            switch (currentPage.name) {
+                case 'about':
+                    return <About />;
+                case 'portfolio':
+                    return <Portfolio />;
+                case 'contact':
+                    return <Contact />;
+                case 'resume':
+                    return <Resume />;
+                default:
+                    return <About />;
+            }
+        }
+    }
 
     return (
         <div>
