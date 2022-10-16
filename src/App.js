@@ -8,28 +8,34 @@ import Contact from './components/Contact';
 import About from './components/About';
 
 function App() {
-    const [categories] = useState([
+    const [pages] = useState([
         { name: 'about' },
         { name: 'portfolio' },
         { name: 'contact' },
         { name: 'resume' }
     ]);
 
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+    const [currentPage, setCurrentPage] = useState(pages[0]);
 
     const [contactSelected, setContactSelected] = useState(false);
 
     return (
         <div>
             <Nav
-                categories={categories}
-                setCurrentCategory={setCurrentCategory}
-                currentCategory={currentCategory}
+                pages={pages}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
             ></Nav>
             <main>
-                <Portfolio></Portfolio>
+                {!contactSelected ? (
+                    <>
+                        <Portfolio></Portfolio>
+                    </>
+                ) : (
+                    <Contact></Contact>
+                )}
             </main>
         </div>
     );
