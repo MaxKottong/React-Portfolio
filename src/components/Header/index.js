@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../assets/css/Header/style.css';
+import '../../assets/css/header.css';
 
 const Header = (props) => {
     const {

@@ -34,15 +34,15 @@ function App() {
 
     return (
         <div>
+            <main className="box">
             <Header
                 pages={pages}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
-            <main className="box">
                 {renderPage({ currentPage })}
+                <Footer />
             </main>
-            <Footer />
         </div>
     );
 };

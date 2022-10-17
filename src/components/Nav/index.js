@@ -1,6 +1,7 @@
 ﻿import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../assets/css/nav.css'
 
 function Nav(props) {
     const {

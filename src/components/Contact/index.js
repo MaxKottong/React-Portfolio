@@ -21,6 +21,10 @@ function ContactForm() {
                 }
             }
         }
+        if (e.tar.get.name === 'message') {
+
+        }
+
         if (!errorMessage) {
             setFormState({ ...formState, [e.target.name]: e.target.value })
         }
@@ -32,9 +36,9 @@ function ContactForm() {
     }
 
     return (
-        <section>
+        <section className="contact">
             <h1>Contact</h1>
-            <form className="form" id="contact-form" onSubmit={handleSubmit}>
+            <form className="form contact" id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input className="form-control" type="text" defaultValue={name} onBlur={handleChange} name="name" />

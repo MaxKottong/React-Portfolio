@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <div>
+        <div className="resume">
             <h1>Resume</h1>
             <br />
             <p>Download my <a href="google.com">resume</a></p>
