@@ -17,8 +17,6 @@ function App() {
 
     const [currentPage, setCurrentPage] = useState(pages[0]);
 
-    const [contactSelected, setContactSelected] = useState(false);
-
     const renderPage = ({ currentPage }) => {
         switch (currentPage.name) {
             case 'about':
@@ -40,18 +38,11 @@ function App() {
                 pages={pages}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
             />
             <main>
-                {!contactSelected ? (
-                    <>
-                        {renderPage({ currentPage })}
-                    </>
-                ) : (
-                    <Contact />
-                )}
+                {renderPage({ currentPage })}
             </main>
+            <Footer />
         </div>
     );
 };
