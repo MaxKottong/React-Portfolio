@@ -19,21 +19,18 @@ function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
 
-    function Page() {
-
-        const renderPage = () => {
-            switch (currentPage.name) {
-                case 'about':
-                    return <About />;
-                case 'portfolio':
-                    return <Portfolio />;
-                case 'contact':
-                    return <Contact />;
-                case 'resume':
-                    return <Resume />;
-                default:
-                    return <About />;
-            }
+    const renderPage = ({ currentPage }) => {
+        switch (currentPage.name) {
+            case 'about':
+                return <About />;
+            case 'portfolio':
+                return <Portfolio />;
+            case 'contact':
+                return <Contact />;
+            case 'resume':
+                return <Resume />;
+            default:
+                return <About />;
         }
     }
 
@@ -49,7 +46,7 @@ function App() {
             <main>
                 {!contactSelected ? (
                     <>
-                        {Page({ currentPage })}
+                        {renderPage({ currentPage })}
                     </>
                 ) : (
                     <Contact />
