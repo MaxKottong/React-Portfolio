@@ -12,7 +12,7 @@ const Header = (props) => {
 
     return (
         <div>
-            <h1 id="header">
+            <h1 className="header">
                 <a data-testid="link" href="/">
                     Lernantino
                 </a>

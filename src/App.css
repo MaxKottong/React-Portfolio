@@ -18,6 +18,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: #1a4579;
+    color: #fff;
 }
 
 .App-header {
@@ -39,6 +41,8 @@
 
 .about, .contact, .portfolio, .resume {
     height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @keyframes App-logo-spin {
