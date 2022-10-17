@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import Nav from '../Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = (props) => {
     const {
         pages = [],
         setCurrentPage,
-        currentPage,
-        contactSelected,
-        setContactSelected
+        currentPage
     } = props;
 
     return (
@@ -21,8 +20,6 @@ const Header = (props) => {
                 pages={pages}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
             >
             </Nav>
         </div>

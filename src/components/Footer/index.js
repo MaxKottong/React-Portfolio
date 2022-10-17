@@ -1,6 +1,7 @@
 import React from 'react';
 import linkedIn from '../../assets/small/logos/LI-In-Bug.png'
 import gitHub from '../../assets/small/logos/GitHub-Mark-64px.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
     return (

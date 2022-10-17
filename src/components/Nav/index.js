@@ -1,13 +1,12 @@
 ﻿import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Nav(props) {
     const {
         pages = [],
         setCurrentPage,
         currentPage,
-        contactSelected,
-        setContactSelected
     } = props;
 
     useEffect(() => {
@@ -20,12 +19,11 @@ function Nav(props) {
                 <ul className="flex-row">
                     {pages.map((page) => (
                         <li
-                            className={`mx-1 ${currentPage.name === page.name && !contactSelected && `navActive`}`}
+                            className={`mx-1 ${currentPage.name === page.name && `navActive`}`}
                             key={page.name}
                         >
                             <span onClick={() => {
                                 setCurrentPage(page);
-                                setContactSelected(false);
                             }}
                             >
                                 {capitalizeFirstLetter(page.name)}
