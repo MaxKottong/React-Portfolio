@@ -19,7 +19,8 @@ function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
 
-    function Page({ currentPage }) {
+    function Page() {
+
         const renderPage = () => {
             switch (currentPage.name) {
                 case 'about':
@@ -44,14 +45,14 @@ function App() {
                 currentPage={currentPage}
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
-            ></Header>
+            />
             <main>
                 {!contactSelected ? (
                     <>
-                        <About currentPage={currentPage}></About>
+                        {Page({ currentPage })}
                     </>
                 ) : (
-                    <Contact></Contact>
+                    <Contact />
                 )}
             </main>
         </div>
