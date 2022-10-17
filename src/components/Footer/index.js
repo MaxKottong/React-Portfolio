@@ -1,10 +1,12 @@
 import React from 'react';
-/*import linkedin from '../assets/small/logos/linkedin.png';*/
+import linkedIn from '../../assets/small/logos/LI-In-Bug.png'
+import gitHub from '../../assets/small/logos/GitHub-Mark-64px.png'
 
 const Footer = () => {
     return (
         <div>
-            asd
+            <a href="google.com" target="_blank"><img src={linkedIn} width="75" height="64" alt="LinkedIn logo" /></a>
+            <a href="google.com" target="_blank"><img src={gitHub} alt="GitHub logo" /></a>
         </div>
     )
 }
