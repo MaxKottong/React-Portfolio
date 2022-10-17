@@ -24,6 +24,12 @@
   color: white;
 }
 
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }

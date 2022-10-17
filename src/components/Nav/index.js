@@ -15,22 +15,24 @@ function Nav(props) {
 
     return (
         <header className="flex-row px-1">
-            <nav>
-                <ul className="flex-row">
-                    {pages.map((page) => (
-                        <li
-                            className={`mx-1 ${currentPage.name === page.name && `navActive`}`}
-                            key={page.name}
-                        >
-                            <span onClick={() => {
-                                setCurrentPage(page);
-                            }}
+            <nav className="navbar navbar-expand-lg row navbar-dark">
+                <div className="">
+                    <ul className="navbar-nav ml-auto">
+                        {pages.map((page) => (
+                            <li
+                                className={`nav-item ${currentPage.name === page.name}`}
+                                key={page.name}
                             >
-                                {capitalizeFirstLetter(page.name)}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
+                                <span onClick={() => {
+                                    setCurrentPage(page);
+                                }}
+                                >
+                                    {capitalizeFirstLetter(page.name)}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
         </header>
     );

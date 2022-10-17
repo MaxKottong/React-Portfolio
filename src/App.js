@@ -39,7 +39,7 @@ function App() {
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
-            <main>
+            <main className="box">
                 {renderPage({ currentPage })}
             </main>
             <Footer />
