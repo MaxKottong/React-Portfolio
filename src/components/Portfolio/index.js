@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Project from '../Project';
 import streamConnect from '../../assets/large/projects/streamConnect.png'
 import giftConnect from '../../assets/large/projects/giftConnect.png'
 import runBuddy from '../../assets/large/projects/runBuddy.png'
 import kottongPortfolio from '../../assets/large/projects/kottongPortfolio.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../assets/css/portfolio.css';
 
 const Portfolio = () => {
     const projects = [
@@ -35,10 +36,13 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className="d-flex flex-wrap justify-content-between mt-3 portfolio">
-            {projects.map(project => {
-                return <Project {...project} />
-            })}
+        <div className="container portfolio">
+            <h1>Portfolio</h1>
+            <div className="projects row">
+                {projects.map(project => {
+                    return <Project key={projects.title} {...project} />
+                })}
+            </div>
         </div>
     );
 };
