@@ -1,3 +1,7 @@
 .portfolio .row > div {
     margin-bottom: 30px;
 }
+
+.card-body, .card-title, .card-text {
+    background-color: #fff;
+}
