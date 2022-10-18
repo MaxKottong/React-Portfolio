@@ -16,15 +16,15 @@ const Portfolio = () => {
             projectImg: streamConnect
         },
         {
-            title: 'Gift Pilot',
-            deployLink: 'https://gift-pilot.herokuapp.com/home',
-            gitHubLink: 'https://github.com/gatorhatur/gift-pilot',
+            title: 'Kottong Portfolio',
+            deployLink: 'https://github.com/MaxKottong/Kottong-Portfolio',
+            gitHubLink: 'https://github.com/MaxKottong/Kottong-Portfolio',
             projectImg: kottongPortfolio
         },
         {
-            title: 'Kottong Portfolio',
-            deployLink: 'https://maxkottong.github.io/Kottong-Portfolio/',
-            gitHubLink: 'https://github.com/MaxKottong/Kottong-Portfolio',
+            title: 'Gift Pilot',
+            deployLink: 'https://gift-pilot.herokuapp.com/home',
+            gitHubLink: 'https://github.com/gatorhatur/gift-pilot ',
             projectImg: giftConnect
         },
         {
