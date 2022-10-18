@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .headerNav {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        cursor: pointer;
+    }
+
+    .navbar li {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 25px;
+    }
+}

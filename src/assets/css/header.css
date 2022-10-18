@@ -2,5 +2,11 @@
     .header {
         text-align: center;
         font-size: 70px;
+        background-color: #426ea3;
     }
+
+        .header a {
+            text-decoration: none !important;
+            color: #fff;
+        }
 }

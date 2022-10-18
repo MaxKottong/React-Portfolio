@@ -1,5 +1,14 @@
 @media (max-width: 768px) {
     #about {
         text-align: center;
+        font-size: 45px;
+    }
+
+    .profilePicture {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 }

@@ -1,5 +1,6 @@
 ﻿import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/nav.css'
 
@@ -15,7 +16,7 @@ function Nav(props) {
     }, [currentPage]);
 
     return (
-        <header className="flex-row px-1">
+        <header className="d-flex px-1 headerNav">
             <nav className="navbar navbar-expand-lg row navbar-dark">
                 <div className="">
                     <ul className="navbar-nav ml-auto">
