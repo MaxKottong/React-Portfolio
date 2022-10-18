@@ -48,26 +48,29 @@ function ContactForm() {
     return (
         <section className="contact my-5">
             <h1 id="contact">Contact</h1>
-            <form className="form contact" id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input className="form-control" type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input className="form-control" type="email" defaultValue={email} name="email" onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea className="form-control" name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                </div>
-                {errorMessage && (
+            <hr />
+            <div className="row">
+                <form className="form contact col-xl-6" id="contact-form" onSubmit={handleSubmit}>
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <label htmlFor="name">Name:</label>
+                        <input className="form-control" type="text" defaultValue={name} onBlur={handleChange} name="name" />
                     </div>
-                )}
-                <button className="btn btn-dark" type="submit">Submit</button>
-            </form>
+                    <div>
+                        <label htmlFor="email">Email address:</label>
+                        <input className="form-control" type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea className="form-control" name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <button className="btn btn-dark" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     );
 }

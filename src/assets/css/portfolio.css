@@ -6,8 +6,14 @@
     background-color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) {
     #portfolio {
         font-size: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    #portfolio {
+        font-size: 55px;
     }
 }

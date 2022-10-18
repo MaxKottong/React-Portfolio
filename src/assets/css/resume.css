@@ -1,5 +1,11 @@
-@media (max-width: 768px) {
+@media (min-width: 300px) {
     #resume {
         font-size: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    #resume {
+        font-size: 55px;
     }
 }

@@ -5,7 +5,7 @@ const Resume = () => {
     return (
         <div className="resume my-5">
             <h1 id="resume">Resume</h1>
-            <br />
+            <hr />
             <p>Download my <a href="https://www.google.com" target="_blank">resume</a></p>
             <h2>Front-end Proficiencies</h2>
             <ul>

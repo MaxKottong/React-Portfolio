@@ -2,7 +2,7 @@
     padding: 0 !important;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) {
     .headerNav {
         justify-content: center;
     }
@@ -18,3 +18,10 @@
         font-size: 25px;
     }
 }
+
+@media (min-width: 768px) {
+    .navbar li {
+        font-size: 30px;
+    }
+}
+

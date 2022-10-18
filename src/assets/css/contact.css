@@ -2,7 +2,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) {
     h1 {
         text-align: center;
     }
@@ -10,4 +10,14 @@ textarea {
     #contact {
         font-size: 45px;
     }
+}
+
+@media (min-width: 768px) {
+    #contact {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

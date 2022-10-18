@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 300px) {
     .header {
         text-align: center;
         font-size: 70px;
@@ -9,4 +9,10 @@
             text-decoration: none !important;
             color: #fff;
         }
+}
+
+@media (min-width: 768px) {
+    .header {
+        font-size: 90px;
+    }
 }
