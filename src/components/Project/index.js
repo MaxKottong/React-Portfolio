@@ -1,40 +1,19 @@
-import React, { useState } from 'react';
-import Portfolio from '../Portfolio';
-import placeHolder from '../../assets/small/projects/600.png'
+import React from 'react';
+import github from '../../assets/small/logos/GitHub-Mark-64px.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Project = () => {
-    const projects = [
-        {
-            title: 'Stream Connect',
-            deployLink: 'https://gatorhatur.github.io/stream-connect/',
-            gitHubLink: 'https://github.com/gatorhatur/stream-connect',
-            projectImg: placeHolder
-        },
-        {
-            title: 'Gift Pilot',
-            deployLink: 'https://gift-pilot.herokuapp.com/home',
-            gitHubLink: 'https://github.com/gatorhatur/gift-pilot',
-            projectImg: placeHolder
-        },
-        {
-            title: 'Kottong Portfolio',
-            deployLink: 'https://maxkottong.github.io/Kottong-Portfolio/',
-            gitHubLink: 'https://github.com/MaxKottong/Kottong-Portfolio',
-            projectImg: placeHolder
-        },
-        {
-            title: 'Run Buddy',
-            deployLink: 'https://maxkottong.github.io/run-buddy/',
-            gitHubLink: 'https://github.com/MaxKottong/run-buddy',
-            projectImg: placeHolder
-        }
-    ];
+function Project(project) {
+    const { title, deployLink, gitHubLink, projectImg } = project;
 
     return (
-        <div>
-            
+        <div className='position-relative'>
+            <div className='position-absolute top-50'>
+                <h1><a href={deployLink} target='_blank' rel='noreferrer'>{title}</a></h1>
+            </div>
+            <a href={gitHubLink} target='_blank' rel='noreferrer'><img src={github} className='position-absolute top-0 start-100' alt='github logo'></img></a>
+            <img className='m-3 shadow' src={projectImg} alt={title} height='200px'></img>
         </div>
     );
-};
+}
 
 export default Project;
