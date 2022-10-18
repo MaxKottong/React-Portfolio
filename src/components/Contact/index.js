@@ -50,7 +50,7 @@ function ContactForm() {
             <h1 id="contact">Contact</h1>
             <hr />
             <div className="row">
-                <form className="form contact col-xl-6" id="contact-form" onSubmit={handleSubmit}>
+                <form className="form contact col-lg-6" id="contact-form" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
                         <input className="form-control" type="text" defaultValue={name} onBlur={handleChange} name="name" />

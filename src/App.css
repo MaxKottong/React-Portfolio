@@ -41,10 +41,26 @@
     overflow: auto;
 }
 
-.about, .contact, .resume {
+.contact, .resume {
     height: 100%;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.about {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 430px) {
+    .about {
+        height: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -52,11 +68,6 @@
         padding-left: 90px;
         padding-right: 90px;
     }
-}
-
-.portfolio {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 @keyframes App-logo-spin {
