@@ -5,3 +5,9 @@
 .card-body, .card-title, .card-text {
     background-color: #fff;
 }
+
+@media (max-width: 768px) {
+    #portfolio {
+        font-size: 45px;
+    }
+}

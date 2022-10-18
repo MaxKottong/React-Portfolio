@@ -36,8 +36,8 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className="container portfolio">
-            <h1>Portfolio</h1>
+        <div className="container portfolio my-5">
+            <h1 id="portfolio">Portfolio</h1>
             <div className="projects row">
                 {projects.map(project => {
                     return <Project key={projects.title} {...project} />

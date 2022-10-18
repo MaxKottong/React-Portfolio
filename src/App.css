@@ -18,7 +18,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #efe6d6;
     color: #000;
 }
 
@@ -38,16 +37,23 @@
     display: flex;
     flex-flow: column;
     height: 100vh;
+    background-color: #efe6d6;
+    overflow: auto;
 }
 
-.about, .contact, .portfolio, .resume {
+.about, .contact, .resume {
     height: 100%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @keyframes App-logo-spin {
-  from {
+    from {
     transform: rotate(0deg);
   }
   to {

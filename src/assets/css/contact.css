@@ -6,4 +6,8 @@ textarea {
     h1 {
         text-align: center;
     }
+
+    #contact {
+        font-size: 45px;
+    }
 }

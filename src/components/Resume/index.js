@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../assets/css/resume.css';
 
 const Resume = () => {
     return (
-        <div className="resume">
-            <h1>Resume</h1>
+        <div className="resume my-5">
+            <h1 id="resume">Resume</h1>
             <br />
             <p>Download my <a href="https://www.google.com" target="_blank">resume</a></p>
             <h2>Front-end Proficiencies</h2>

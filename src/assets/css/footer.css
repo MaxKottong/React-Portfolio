@@ -1,5 +1,6 @@
-@media (max-width: 768px) {
-    .footer {
-        text-align: center;
-    }
+.footer {
+    text-align: center;
+    background-color: #434242 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

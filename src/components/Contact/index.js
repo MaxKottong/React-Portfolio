@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail, validateMessage } from '../../utils/helpers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/css/contact.css';
 
@@ -22,8 +22,17 @@ function ContactForm() {
                 }
             }
         }
-        if (e.tar.get.name === 'message') {
-
+        if (e.target.name === 'message') {
+            const isValid = validateMessage(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Message provided is invalid');
+            } else {
+                if (!e.target.value.length) {
+                    setErrorMessage(`${e.target.name} is required.`);
+                } else {
+                    setErrorMessage('');
+                }
+            }
         }
 
         if (!errorMessage) {
@@ -37,8 +46,8 @@ function ContactForm() {
     }
 
     return (
-        <section className="contact">
-            <h1>Contact</h1>
+        <section className="contact my-5">
+            <h1 id="contact">Contact</h1>
             <form className="form contact" id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
