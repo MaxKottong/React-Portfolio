@@ -19,10 +19,10 @@ function Nav(props) {
         <header className="d-flex px-1 headerNav">
             <nav className="navbar navbar-expand-lg row navbar-dark">
                 <div className="">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ms-auto unstyled">
                         {pages.map((page) => (
                             <li
-                                className={`nav-item ${currentPage.name === page.name}`}
+                                className={`nav-item ${currentPage.name === page.name ? 'opacity-100' : 'opacity-50'}`}
                                 key={page.name}
                             >
                                 <span onClick={() => {

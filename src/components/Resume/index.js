@@ -6,7 +6,7 @@ const Resume = () => {
         <div className="resume my-5">
             <h1 id="resume">Resume</h1>
             <hr />
-            <p>Download my <a href="https://www.google.com" target="_blank">resume</a></p>
+            <p>Download my <a href="../../assets/small/resumePH.txt" download>resume</a></p>
             <h2>Front-end Proficiencies</h2>
             <ul>
                 <li>HTML</li>
