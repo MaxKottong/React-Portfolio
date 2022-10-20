@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.0e4b764a.css",
+    "main.js": "/react-portfolio/static/js/main.ae9bf57c.js",
+    "static/media/runBuddy.png": "/react-portfolio/static/media/runBuddy.4a7c173a38ce5c64e4ca.png",
+    "static/media/kottongPortfolio.png": "/react-portfolio/static/media/kottongPortfolio.8f571b196e3a8110bee0.png",
+    "static/media/streamConnect.png": "/react-portfolio/static/media/streamConnect.e5676fdded34b433e16c.png",
+    "static/media/giftConnect.png": "/react-portfolio/static/media/giftConnect.cc0b5faf8ded9219144a.png",
+    "static/media/maxsTechBlog.png": "/react-portfolio/static/media/maxsTechBlog.68749e2252dbcfe40e12.png",
+    "static/media/profilePicture.png": "/react-portfolio/static/media/profilePicture.e51c20b281edff34aaca.png",
+    "static/media/jate.png": "/react-portfolio/static/media/jate.c050b47ac6c27d2a41bf.png",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.a096e45720da7161331f.pdf",
+    "static/media/stackOverflow.png": "/react-portfolio/static/media/stackOverflow.579cff432dec19bc3d23.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.0e4b764a.css.map": "/react-portfolio/static/css/main.0e4b764a.css.map",
+    "main.ae9bf57c.js.map": "/react-portfolio/static/js/main.ae9bf57c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e4b764a.css",
+    "static/js/main.ae9bf57c.js"
+  ]
+}
