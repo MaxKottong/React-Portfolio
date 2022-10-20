@@ -49,7 +49,7 @@ function ContactForm() {
         <section className="contact my-5">
             <h1 id="contact">Contact</h1>
             <hr />
-            <div className="row">
+            <div className="">
                 <form className="form contact col-lg-6" id="contact-form" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>

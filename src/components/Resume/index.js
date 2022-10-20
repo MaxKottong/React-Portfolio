@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../../assets/resume.pdf'
 import '../../assets/css/resume.css';
 
 const Resume = () => {
@@ -6,7 +7,7 @@ const Resume = () => {
         <div className="resume my-5">
             <h1 id="resume">Resume</h1>
             <hr />
-            <p>Download my <a href="../../../public/resumePH.md" download>resume</a></p>
+            <p>Download my <a href={resume} download>resume</a></p>
             <h2>Front-end Proficiencies</h2>
             <ul>
                 <li>HTML</li>
